@@ -122,7 +122,7 @@ btnRoll.addEventListener('click', function(){
 
 	if(activePlayer == 1){
 		p1 += get;
-		
+		p1 = removeClass(p1);
 		if(p1 > 100){
 			p1 -= get;
 		}else if(p1==100){
@@ -144,6 +144,8 @@ btnRoll.addEventListener('click', function(){
 	}else{
 		dice.src = `dice-${get}.png`;
 		p2 += get;
+		p2 = removeClass(p2);
+		
 		if(p2 > 100){
 		p2 -= get;
 		}else if(p2==100){
